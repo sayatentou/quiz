@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>クイズだZ！</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- このクイズアプリは、選択肢は３択でも４択でも何択でもいいが全クイズの択数をそろえなくてはならない。answersのliの数も応じて変える -->
+  <!-- クイズの種類を増やすには、quizNamesのliとmain.jsの最後の実行部分を応じて増やさなくてはならない。 -->
+
+  <div id="select">
+    <div class="container">
+      <p>どのクイズにする？</p>
+      <ul id="quizNames">
+        <li>雑学クイズ12問</li>
+        <li>化学クイズ10問</li>
+        <li>健康クイズ10問</li>
+        <li>アニメクイズ10問</li>
+        <li>首都名クイズ10問</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="play" class="hidden">
+    <div class="container">
+      <h1 id="quiz_title"></h1>
+      <div id="question"></div>
+      <ul id="answers">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <div id="btn" class="disabled">次へ</div>
+      <div id="result">
+        <p></p>
+        <p></p>
+        <a href="">リプレイ</a>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>
